@@ -1,0 +1,16 @@
+{
+  "tcpPort" : 6789,
+  "rmiPort" : 3800,
+  "multicastPort" : 7800,
+  "multicastAddress" : "230.0.0.1",
+  "corePoolSize" : 4,
+  "secretWordTimeout" : 120000,
+  "verbose" : true,
+  "sqliteDatabasePath" : "/home/leonardo/Wordle/Database/sqlite.db",
+  "autoCreateDatabase" : true,
+  "autoCommitDatabase" : false,
+  "wordsFilePath" : "/home/leonardo/Documents/University/Reti/Laboratorio/ProgettoWordleScoppittoLeonardo/words.txt",
+  "useJsonDatabase" : true,
+  "jsonDatabasePath" : "/home/leonardo/Wordle/Database/JsonDatabase",
+  "debug" : true
+}

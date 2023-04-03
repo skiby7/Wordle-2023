@@ -1,0 +1,83 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    overflow: hidden;
+    @apply bg-gray-300 dark:bg-gray-700
+  }
+}
+
+@layer components {
+  /* * {
+    outline: 1px solid #f00 !important;
+  } */
+  
+  .modal-button {
+    @apply w-[120px] h-[50px] mx-4 mb-2 shadow-lg rounded-lg text-black dark:text-white bg-gray-200 dark:bg-gray-600 hover:bg-gray-300 hover:dark:bg-gray-700
+  }
+
+  .sidebar-icon {
+    @apply relative flex items-center justify-center 
+               h-12 w-12 mt-2 mb-2 mx-auto shadow-lg
+               bg-gray-100
+               dark:bg-gray-800 text-sky-500
+               hover:bg-sky-500 hover:text-white
+               rounded-3xl hover:rounded-xl
+               transition-all duration-100 ease-linear
+               cursor-pointer;
+  }
+  .sidebar-icon-bottom {
+    @apply relative flex items-center justify-center 
+               h-12 w-12 mt-auto mb-5 mx-auto shadow-lg
+               bg-gray-400
+               dark:bg-gray-800 text-sky-500
+               hover:bg-sky-600 hover:text-white
+               rounded-3xl hover:rounded-xl
+               transition-all duration-100 ease-linear
+               cursor-pointer;
+
+  }
+  .sidebar-tooltip {
+    @apply absolute w-auto p-2 m-5 min-w-max left-14
+    rounded-md shadow-md bg-gray-500
+    text-white dark:bg-gray-900 
+    text-lg font-bold
+    transition-all duration-100 scale-0 origin-left;
+  }
+  .navbar-labels {
+    @apply text-gray-700 dark:text-white dark:bg-gray-700 p-3 rounded-xl shadow-md font-mono text-sm
+  }
+  .navbar-labels-highlight {
+    @apply dark:text-rose-400 text-rose-600
+  }
+
+  .not-in-word{
+    @apply dark:bg-gray-800 dark:text-white text-black;
+    
+  }
+  .not-in-place{
+    @apply bg-yellow-400 text-black ;
+  }
+  .correct {
+    @apply bg-green-400 text-black;
+
+  }
+
+  
+
+}

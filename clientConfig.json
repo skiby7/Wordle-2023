@@ -1,0 +1,12 @@
+{
+  "tcpPort" : 6789,
+  "rmiPort" : 3800,
+  "maxRetries" : 5,
+  "reconnectionTimeout" : 1500,
+  "networkInterface" : "wlp59s0",
+  "serverIp" : "localhost",
+  "rmiRegistrationEndpoint" : "REGISTRATION",
+  "rmiRankingEndpoint" : "RANKING",
+  "language" : "it-it",
+  "prettyPrint" : true
+}
